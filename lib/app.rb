@@ -1,7 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require 'JSON'
-require 'pry'
+# require 'pry'
 
 class PreferencesQuestionaire < Sinatra::Base
 
@@ -18,19 +18,20 @@ class PreferencesQuestionaire < Sinatra::Base
   ]
 
   # list all
-  get '/resources/?' do
-    RESOURCES.to_json
+  get '/' do
+    # RESOURCES.to_json
+    status 200
   end
 
   # view one
-  get '/resources/:id' do
+  get '/:id' do
     resource = RESOURCES.at(params[:id])
     return status 404 if resource.nil?
     resource.to_json
   end
 
   # create
-  post '/resources' do
+  post '/' do
     RESOURCES.push(params['resource'])
     status 201
   end
