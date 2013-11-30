@@ -11,6 +11,8 @@ class PreferencesQuestionaire < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  set :root, File.dirname(__FILE__) + '/../'
+
   RESOURCES = [
     { id:  1, name: 'first'},
     { id:  2, name: 'second'},
@@ -20,7 +22,7 @@ class PreferencesQuestionaire < Sinatra::Base
   # list all
   get '/' do
     # RESOURCES.to_json
-    status 200
+    erb :index
   end
 
   # view one
