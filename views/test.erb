@@ -1,8 +1,19 @@
+<p>Selecteer het type resultaat wat voor u het meest helder is. Klik op de afbeelding voor een grote weergave.</p>
 <form class="questionaire" action="/test" method="POST">
     <input type="hidden" class="questionaire-value" name="value" value="" />
     <ul class="clearfix preferences">
-        <li><a class="preference" data-value="option-a" href="#"><img src="option-a.png" width="400"></a></li>
-        <li><a class="preference" data-value="option-b" href="#"><img src="option-b.png" width="400"></a></li>
+        <li>
+            <a href="option-a.png" class="swipebox" title="optie A">
+                <img src="option-a.png" width="400">
+            </a><br>
+            <button type="button" class="preference" data-value="option-a">prefereer optie A &rarr;</button>
+        </li>
+        <li>
+            <a href="option-b.png" class="swipebox" title="optie B">
+                <img src="option-b.png" width="400">
+            </a><br>
+            <button type="button" class="preference" data-value="option-b">prefereer optie B &rarr;</button>
+        </li>
     </ul>
 </form>
 

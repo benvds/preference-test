@@ -29,9 +29,7 @@ body {
 }
 
 .preference {
-    display: inline-block;
-    border: 4px solid transparent;
+    /* display: inline-block; */
+    margin: 1em;
+    /* border: 4px solid transparent; */
 }
-    .preference:hover {
-        border-color: blue;
-    }
