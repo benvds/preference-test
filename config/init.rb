@@ -14,3 +14,4 @@ require './config/migrations'
 Dir["./lib/models/**/*.rb"].each{|model|
   require model
 }
+
