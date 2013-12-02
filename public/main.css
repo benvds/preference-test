@@ -1,0 +1,37 @@
+*, *:before, *:after {
+    box-sizing: boder-box;
+}
+
+.clearfix { *zoom:1; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    text-align: center;
+}
+
+.site-header, .container, .site-footer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.call-to-action {
+    font-size: 200%;
+}
+
+.preferences {
+    padding: 0;
+    list-style: none;
+}
+.preferences li {
+    float: left;
+    width: 50%;
+}
+
+.preference {
+    display: inline-block;
+    border: 4px solid transparent;
+}
+    .preference:hover {
+        border-color: blue;
+    }

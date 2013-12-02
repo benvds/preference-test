@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>Preferences Test</title>
-    </head>
-    <body>
-        <h1>Preferences Test</h1>
-        <form action="/test" method="POST">
-            <label><input type="radio" name="value" value="first" checked>First choice</label><br>
-            <label><input type="radio" name="value" value="second">Second choice</label><br>
-            <button type="submit">submit</button>
-        </form>
-    </body>
-</html>
+<form class="questionaire" action="/test" method="POST">
+    <input type="hidden" class="questionaire-value" name="value" value="" />
+    <ul class="clearfix preferences">
+        <li><a class="preference" data-value="option-a" href="#"><img src="option-a.png" width="400"></a></li>
+        <li><a class="preference" data-value="option-b" href="#"><img src="option-b.png" width="400"></a></li>
+    </ul>
+</form>
+
+
