@@ -14,7 +14,11 @@ class PreferencesQuestionaire < Sinatra::Base
     erb :index
   end
 
-  post '/' do
+  get '/test' do
+    erb :test
+  end
+
+  post '/test' do
     Preference.new(value: params[:value]).save
     redirect '/thanks'
   end
